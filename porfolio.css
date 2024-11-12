@@ -1,11 +1,11 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: 'roboto' sans-serif;
+    font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
 }
 
-:root{
+:root {
     --color: white;
     --color2: #f9004d;
 }
@@ -25,33 +25,38 @@ nav {
     padding-top: 45px;
     padding-left: 8%;
     padding-right: 8%;
-}   
+}
 
-.logo{
+.logo {
     color: var(--color);
     font-size: 35px;
     letter-spacing: 1px;
     cursor: pointer;
 }
-span{
+
+span {
     color: var(--color2);
 }
-nav ul li{
+
+nav ul li {
     list-style-type: none;
     display: inline-block;
     padding: 10px 25px;
 }
-nav ul li a{
+
+nav ul li a {
     color: var(--color);
     text-decoration: none;
     font-weight: bold;
     text-transform: capitalize;
 }
-nav ul li a:hover{
-    color:var(--color2);
+
+nav ul li a:hover {
+    color: var(--color2);
     transition: .4s;
 }
-.btn{
+
+.btn {
     background-color: var(--color2);
     color: var(--color);
     text-decoration: none;
@@ -61,36 +66,43 @@ nav ul li a:hover{
     border-radius: 30px;
     transition: transform .4s;
 }
-.btn:hover{
+
+.btn:hover {
     transform: scale(1.2);
 }
-.content{
+
+.content {
     position: absolute;
     top: 50%;
     left: 8%;
     transform: translateY(-50%);
 }
-h1{
+
+h1 {
     color: var(--color);
     font-size: 75px;
     margin: 20px 0px 20px;
 }
-h3{
+
+h3 {
     color: var(--color);
     font-size: 25px;
     margin-bottom: 50px;
 }
-h4{
+
+h4 {
     color: #fcfc;
     letter-spacing: 2px;
     font-size: 20px;
 }
-.newslatter form{
+
+.newslatter form {
     width: 380px;
     max-width: 100%;
     position: relative;
 }
-.newslatter form input:first-child{
+
+.newslatter form input:first-child {
     display: inline-block;
     width: 100%;
     padding: 14px 130px 14px 15px;
@@ -99,7 +111,7 @@ h4{
     border-radius: 30px;
 }
 
-.newslatter form input:last-child{
+.newslatter form input:last-child {
     position: absolute;
     display: inline-block;
     outline: none;
@@ -131,7 +143,7 @@ h4{
 .about-text {
     width: 550px;
     color: white;
-    z-index: 1; /* Ensures text stays above the image if needed */
+    z-index: 1;
 }
 
 .main {
@@ -140,11 +152,10 @@ h4{
     margin: 0 auto;
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Ensures space between image and text */
-    position: relative; /* Ensures child elements respect their container */
+    justify-content: space-between;
+    position: relative;
 }
 
-/* Hide hover image initially */
 .hover {
     opacity: 0;
     position: absolute;
@@ -152,7 +163,6 @@ h4{
     left: 0;
 }
 
-/* Show hover image and hide default one on hover */
 .main:hover .hover {
     opacity: 1;
 }
@@ -161,62 +171,68 @@ h4{
     opacity: 0;
 }
 
-.about-text h2{
+.about-text h2 {
     color: var(--color);
     font-size: 75px;
     text-transform: capitalize;
     margin-bottom: 20px;
 }
-.about-text h5{
+
+.about-text h5 {
     color: var(--color);
     letter-spacing: 2px;
     font-size: 22px;
     margin-bottom: 25px;
     text-transform: capitalize;
 }
-.about-text p{
+
+.about-text p {
     color: var(--color);
     letter-spacing: 1px;
     line-height: 28px;
     font-size: 18px;
     margin-bottom: 45px;
 }
-button{
-  background-color: var(--color2); 
-  color: var(--color);
-  text-decoration: none; 
-  border: 2px solid transparent;
-  font-weight: bold;
-  padding: 13px 30px;
-  border-radius: 30px;
-  transition: .4s;
+
+button {
+    background-color: var(--color2); 
+    color: var(--color);
+    text-decoration: none; 
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
 }
-button:hover{
+
+button:hover {
     background-color: transparent;
     color: 2px var(--color2);
     cursor: pointer;
 }
-.service{
+
+.service {
     background: #101010;
     width: 100%;
     padding: 100px 0px;
 }
-.title h2{
+
+.title h2 {
     color: var(--color);
     font-size: 75px;
     width: 1130px;
     margin: 30px auto;
     text-align: center;
 }
-.box{
+
+.box {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 400px;
-  
-    
 }
-.card{
+
+.card {
     height: 550px;
     width: 335px;
     padding: 20px 30px;
@@ -227,25 +243,29 @@ button:hover{
     overflow: hidden;
     text-align: center;
 }
-.card i{
+
+.card i {
     font-size: 50px;
     display: block;
     text-align: center;
     margin: 25px 0px;
     color: var(--color2);
 }
-h5{
-   color: var(--color); 
-   font-size: 23px;
-   margin-bottom: 15px;
+
+h5 {
+    color: var(--color); 
+    font-size: 23px;
+    margin-bottom: 15px;
 }
-.pra p{
+
+.pra p {
     color: var(--color);
     font-size: 16px;
     line-height: 27px;
     margin-bottom: 25px;
 }
-.card .button{
+
+.card .button {
     background-color: var(--color2); 
     color: var(--color);
     text-decoration: none; 
@@ -255,12 +275,14 @@ h5{
     border-radius: 30px;
     transition: .4s;
 }
-.card .button:hover{
+
+.card .button:hover {
     background-color: transparent;
     color: 2px solid var(--color2);
     cursor: pointer;
 }
-.contact-me{
+
+.contact-me {
     width: 100%;
     height: 290px;
     background: #191919;
@@ -268,16 +290,16 @@ h5{
     align-items: center;
     flex-direction: column;
     justify-content: center; 
- }
+}
 
- .contact-me p{
+.contact-me p {
     color: var(--color);
     font-size: 30px;
     font-weight: bold;
     margin-bottom: 25px;
- }
+}
 
- .contact-me .button-two{
+.contact-me .button-two {
     background-color: var(--color2);
     color: var(--color);
     text-decoration: none;
@@ -288,12 +310,13 @@ h5{
     transition: .4s;
 }
 
-.contact-me .button-two:hover{
+.contact-me .button-two:hover {
     background-color: transparent;
     border: 2px solid var(--color2);
     cursor: pointer;
 }
-footer{
+
+footer {
     position: relative;
     width: 100%;
     height: 400px;
@@ -304,14 +327,14 @@ footer{
     justify-content: center;
 }
 
-footer p:nth-child(1){
+footer p:nth-child(1) {
     font-size: 30px;
     color: var(--color);
     margin-bottom: 20px;
     font-weight: bold;
 }
 
-footer p:nth-child(2){
+footer p:nth-child(2) {
     color: var(--color);
     font-size: 17px;
     width: 500px;
@@ -319,11 +342,11 @@ footer p:nth-child(2){
     line-height: 26px;
 }
 
-.social{
+.social {
     display: flex;
 }
 
-.social a{
+.social a {
     width: 45px;
     height: 45px;
     display: flex;
@@ -336,115 +359,30 @@ footer p:nth-child(2){
     text-decoration: none;
     font-size: 20px;
 }
-.social a:hover{
+
+.social a:hover {
     transform: scale(1.3);
     transition: .3s;
 }
-.end{
+
+.end {
     position: absolute;
     color: var(--color2);
     bottom: 35px;
     font-size: 14px;
 }
-/* 
-@media only screen and (max-width: 1200px) {
-    .main, .service, .about-me {
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
-  
-    .about img {
-      width: 100%;
-    }
-  
-    h1 {
-      font-size: 60px;
-    }
-  
-    .service .box {
-      flex-direction: column;
-    }
-  }
-  For tablets (iPads, Samsung Galaxy Tab, etc.)
-  @media only screen and (min-width: 768px) {
-    
-    nav ul li {
-      padding: 20px 10px;
-    }
-  
-    h1 {
-      font-size: 70px;
-    }
-  
-    h3 {
-      font-size: 22px;
-    }
-  
-    .newslatter form {
-      width: 300px;
-    }
-  
-    .card {
-      width: 90%;
-      margin: 10px auto;
-    }
-  
-    footer p:nth-child(2) {
-      width: 90%;
-    }
-  }
-  For mobile phones (iPhones, Samsung Galaxy, etc.)
-  @media only screen and (min-width: 320px) {
-    
-    nav ul {
-      display: none; Hide navigation for small screens
-    }
 
-    .newslatter form {
-        width: 300px;
-      }
-  
-    h1 {
-      font-size: 40px;
-    }
-  
-    h3 {
-      font-size: 18px;
-    }
+/* media queries */
 
-    .title h2{
-        color: var(--color);
-        font-size: 75px;
-        width: 10px;
-        margin: 30px auto;
-        text-align: left;
+@media (max-width: 599px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        padding: 10px 5px;
     }
-
-    
-    .contact-me p{
-        margin-left: auto;
-    }
-  
-    .about-text {
-      width: 90%;
-      text-align: center;
-    }
-  
-    .about-text h2{
-        margin-top: 500px;
-    }
-    .service .box {
-      flex-direction: column;
-    }
-  
-    footer p:nth-child(2) {
-      font-size: 15px;
-      width: 90%;
-    }
-  
-    .social a {
-      width: 40px;
-      height: 40px;
-    }
-  } */
+}
