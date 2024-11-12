@@ -375,14 +375,21 @@ footer p:nth-child(2) {
 /* media queries */
 
 @media (max-width: 599px) {
-    .nav-links {
-        display: none;
-        flex-direction: column;
+    nav ul li a {
+        display: felx;
+        
         background-color: #333;
         position: absolute;
         top: 50px;
         left: 0;
         width: 100%;
-        padding: 10px 5px;
+        padding: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    nav ul li a {
+        width: 20px;
+        justify-content: space-between;
     }
 }
